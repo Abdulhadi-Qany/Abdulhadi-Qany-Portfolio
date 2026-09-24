@@ -151,7 +151,7 @@ Add a minimal footer:
 
 ### 5.1 Image optimization ✅
 
-- ✅ Convert `photo.jpg` (About component) and `avatar.jpg` to `.webp` (avatar: 207KB → 76KB)
+- ✅ Convert `photo.jpg` → `pic.png` (About component) and `avatar.jpg` → `profile.png`
 - ✅ Project images already `.webp`
 - ✅ Add `sizes` attribute and `priority` to avatar `next/image` in Introduce
 - ✅ Jest config updated to mock `.webp` imports

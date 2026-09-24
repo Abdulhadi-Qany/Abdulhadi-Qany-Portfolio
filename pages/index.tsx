@@ -1,16 +1,11 @@
 import React from 'react'
 
-import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo'
 
 import {
     About,
     Contact,
     Experience,
-    GithubLanguages,
-    GithubRepos,
-    GithubSparkline,
-    GithubStats,
     Introduce,
     Projects,
     Skills,
@@ -20,18 +15,6 @@ import {
 import { GithubDataProvider, useSiteData } from '@/utils'
 
 import styles from './styles/index.module.sass'
-
-const GithubCalendar = dynamic(() => import('@/components/github-calendar/GithubCalendar'), {
-    loading: () => (
-        <section
-            className={styles.githubSkeleton}
-            aria-label={'Loading GitHub activity'}
-            aria-busy={'true'}
-            role={'status'}
-        />
-    ),
-    ssr: false
-})
 
 const MainPage: React.FC = () => {
     const data = useSiteData()
@@ -45,7 +28,7 @@ const MainPage: React.FC = () => {
                     images: [
                         {
                             height: 1333,
-                            url: 'https://miksoft.pro/avatar.webp',
+                            url: 'https://miksoft.pro/images/profile.png',
                             width: 1000
                         }
                     ],
@@ -59,23 +42,6 @@ const MainPage: React.FC = () => {
                 <Introduce />
                 <Stats />
                 <About />
-            </div>
-
-            {/* ── GitHub Activity ─────────────────────────────────────── */}
-            <div
-                id={'activity'}
-                className={styles.sectionBlock}
-                aria-label={'GitHub Activity'}
-            >
-                <section>
-                    <h2 className={'pageTitle'}>{data?.seo?.activity?.title}</h2>
-                    <p>{data?.seo?.activity?.description}</p>
-                </section>
-                <GithubCalendar />
-                <GithubStats />
-                <GithubLanguages />
-                <GithubSparkline />
-                <GithubRepos />
             </div>
 
             {/* ── Projects ────────────────────────────────────────────── */}

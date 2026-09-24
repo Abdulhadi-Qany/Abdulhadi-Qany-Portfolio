@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Icon, IconTypes } from '@/components'
-import avatarPic from '@/public/avatar.webp'
+import avatarPic from '@/public/images/profile.png'
 import { update } from '@/update'
 import { useSiteData } from '@/utils'
 
@@ -62,7 +62,7 @@ export const Introduce: React.FC = () => {
                         fill
                         sizes={'(max-width: 768px) 240px, 45vw'}
                         style={{ objectFit: 'cover' }}
-                        alt={"Hi I'm - Misha - Picture of the author"}
+                        alt={"Hi I'm - Ajmal Khan - Picture of the author"}
                         priority
                     />
                 </div>
@@ -108,23 +108,10 @@ export const Introduce: React.FC = () => {
                     )}
                 </div>
 
-                {/* Live counter pills */}
-                <div className={styles.counterPills}>
-                    <div className={styles.pill}>
-                        <span className={styles.pillValue}>{myAge}</span>
-                        <span className={styles.pillLabel}>{'My age'}</span>
-                    </div>
-                    <div className={styles.pill}>
-                        <span className={styles.pillValue}>{myExp}</span>
-                        <span className={styles.pillLabel}>{'Experience'}</span>
-                    </div>
-                </div>
-
                 {/* Location / Timezone / Updated */}
                 <ul className={styles.factsList}>
                     {[
                         { title: 'Location', value: data?.biography?.location },
-                        { title: 'Timezone', value: data?.biography?.timezone },
                         { title: 'Updated', value: dateUpdate }
                     ].map(({ title, value }) => (
                         <li key={`fact-${title}`}>
@@ -142,7 +129,7 @@ export const Introduce: React.FC = () => {
                     </p>
                     <p>
                         {
-                            '19+ years of end-to-end ownership across government, media, and tech. I take products from 0 to launch and build the teams that sustain them.'
+                            '5+ years of end-to-end ownership across government, media, and tech. I take products from 0 to launch and build the teams that sustain them.'
                         }
                     </p>
                 </div>

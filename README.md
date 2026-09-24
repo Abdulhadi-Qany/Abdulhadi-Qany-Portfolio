@@ -224,7 +224,7 @@ Once a pull request is approved and merged:
 
 ### Contact
 
-**Misha** - [miksoft.pro](https://miksoft.pro)
+**Ajmal Khan** - [miksoft.pro](https://miksoft.pro)
 
 Have a question, found an issue, or want to discuss a feature? Feel free to open a [GitHub Issue](https://github.com/miksrv/developer-portfolio-website/issues) or reach out directly via the website.
 

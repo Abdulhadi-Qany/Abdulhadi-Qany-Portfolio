@@ -2,7 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 
-import avatarPic from '@/public/avatar.webp'
+import avatarPic from '@/public/images/profile.png'
 import { useSiteData } from '@/utils'
 import { formatDate, formatPeriod } from '@/utils/date'
 
@@ -42,6 +42,26 @@ export const PrintResume: React.FC = () => {
             </div>
 
             <p className={styles.summary}>{data?.seo?.experience?.description}</p>
+
+            {/* About Me section */}
+            <div className={styles.aboutSection}>
+                <h2 className={styles.sectionTitle}>{'About Me'}</h2>
+                <p>{data?.biography?.bio?.lead}</p>
+                {data?.biography?.bio?.bullets && data.biography.bio.bullets.length > 0 && (
+                    <ul className={styles.bioBullets}>
+                        {data.biography.bio.bullets.map((bullet, i) => (
+                            <li key={i}>{bullet}</li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+
+            {/* Profile section */}
+            <div className={styles.profileSection}>
+                <h2 className={styles.sectionTitle}>{'Profile'}</h2>
+                <p>{'I design systems, define technical direction, and lead engineering teams through complete delivery cycles — from the first architecture decision to live production at scale.'}</p>
+                <p>{'5+ years of end-to-end ownership across government, media, and tech. I take products from 0 to launch and build the teams that sustain them.'}</p>
+            </div>
 
             <div className={styles.body}>
                 <div className={styles.experience}>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { useSiteData } from '@/utils'
 
-import photo from './photo.webp'
+import photo from './pic.png'
 
 import styles from './styles.module.sass'
 
