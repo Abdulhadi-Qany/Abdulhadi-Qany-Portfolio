@@ -156,7 +156,6 @@
         {
             "image": "/images/Maseerak.png",
             "title": "Maseerak – GPS Tracking & Fleet Management Platform",
-            "link": "https://astro.miksoft.pro/",
             "github": "https://github.com/miksrv/astronomy-portal",
             "description": "Designed, architected, and deployed Maseerak, a custom, enterprise-grade GPS tracking and fleet management platform for government ministry fleets. Built from the ground up to replace commercial off-the-shelf (COTS) solutions. Developed a secure, scalable platform providing enhanced security and full operational control. Designed and implemented real-time GPS tracking and fleet management capabilities."
         },
