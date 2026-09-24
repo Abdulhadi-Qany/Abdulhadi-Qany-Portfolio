@@ -7,13 +7,10 @@
   <p>A production-ready, SEO-optimized portfolio template built with Next.js and React. Showcase your skills, projects, and experience with a clean, modern design that makes a lasting impression on employers and clients.</p>
   <a href="CHANGELOG.md" target="_blank">Changelog</a>
   ·
-  <a href="https://miksoft.pro" target="_blank">Live Demo</a>
-  ·
   <a href="https://github.com/miksrv/developer-portfolio-website/issues/new?assignees=miksrv&labels=bug&projects=&template=1-bug.yml&title=%5BBug%5D%3A+">Report Bug</a>
   ·
   <a href="https://github.com/miksrv/developer-portfolio-website/issues/new?assignees=miksrv&labels=enhancement&template=2-feature-request.yml&title=%5BFeature%5D%3A+">Request Feature</a>
   ·
-  <a href="#contact">Contact</a>
 </div>
 
 <br />
@@ -110,15 +107,9 @@
 
 This is a complete, production-ready developer portfolio built with **Next.js**, **React 19**, and **TypeScript**. It is designed to help developers, engineers, and freelancers establish a strong online presence with minimal setup - all content is driven by a single `public/data.json` file, so you can have a personalized portfolio running in minutes.
 
-![Personal website: Main Page](./public/main.jpg)
-
 The template is architected for performance and maintainability. Sections include an animated hero with live age and experience counters, a visual skills breakdown with 10-segment progress bars, a full work experience timeline, and a project gallery - all within a smooth single-page experience powered by Framer Motion transitions.
 
-![Personal website: Projects Page](./public/projects.jpg)
-
 The build outputs pure static HTML via `next export`, making deployment effortless. Host it on Vercel with one click, push it to GitHub Pages, or serve it from any static file host - no server required. The codebase is clean and well-tested, making it easy to extend with your own sections or integrations.
-
-![Personal website: Skills Page](./public/skills.jpg)
 
 This project is open-source and free to use for any personal or commercial portfolio purpose. Contributions, suggestions, and feedback are always welcome.
 
@@ -221,38 +212,3 @@ Once a pull request is approved and merged:
 <p align="right">
   (<a href="#top">Back to top</a>)
 </p>
-
-### Contact
-
-**Ajmal Khan** - [miksoft.pro](https://miksoft.pro)
-
-Have a question, found an issue, or want to discuss a feature? Feel free to open a [GitHub Issue](https://github.com/miksrv/developer-portfolio-website/issues) or reach out directly via the website.
-
-<p align="right">
-  (<a href="#top">Back to top</a>)
-</p>
-
-<!-- MARKDOWN VARIABLES (LINKS, IMAGES) -->
-
-[contributors-badge]: https://img.shields.io/github/contributors/miksrv/developer-portfolio-website.svg?style=for-the-badge
-[contributors-url]: https://github.com/miksrv/developer-portfolio-website/graphs/contributors
-[forks-badge]: https://img.shields.io/github/forks/miksrv/developer-portfolio-website.svg?style=for-the-badge
-[forks-url]: https://github.com/miksrv/developer-portfolio-website/network/members
-[stars-badge]: https://img.shields.io/github/stars/miksrv/developer-portfolio-website.svg?style=for-the-badge
-[stars-url]: https://github.com/miksrv/developer-portfolio-website/stargazers
-[issues-badge]: https://img.shields.io/github/issues/miksrv/developer-portfolio-website.svg?style=for-the-badge
-[issues-url]: https://github.com/miksrv/developer-portfolio-website/issues
-[license-badge]: https://img.shields.io/github/license/miksrv/developer-portfolio-website.svg?style=for-the-badge
-[license-url]: https://github.com/miksrv/developer-portfolio-website/blob/main/LICENSE.txt
-[js-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000
-[js-url]: https://www.javascript.com/
-[ts-badge]: https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff
-[ts-url]: https://www.typescriptlang.org/
-[nextjs-badge]: https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white
-[nextjs-url]: https://nextjs.org/
-[nodejs-badge]: https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white
-[nodejs-url]: https://nodejs.org/
-[sass-badge]: https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff
-[sass-url]: https://sass-lang.com/
-[githubactions-badge]: https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white
-[githubactions-url]: https://docs.github.com/en/actions
