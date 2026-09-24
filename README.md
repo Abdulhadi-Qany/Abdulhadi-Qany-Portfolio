@@ -18,7 +18,6 @@
 <!-- PROJECT BADGES -->
 <div align="center">
 
-[![Contributors][contributors-badge]][contributors-url]
 [![Forks][forks-badge]][forks-url]
 [![Stargazers][stars-badge]][stars-url]
 [![Issues][issues-badge]][issues-url]
