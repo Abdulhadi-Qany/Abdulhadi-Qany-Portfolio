@@ -15,28 +15,7 @@
             ]
         }
     },
-    "contactLinks": [
-        {
-            "icon": "github",
-            "label": "GitHub",
-            "link": "https://github.com/Abdulhadi-Qany"
-        },
-        {
-            "icon": "telegram",
-            "label": "Telegram",
-            "link": "https://t.me/miksoft"
-        },
-        {
-            "icon": "social",
-            "label": "Social",
-            "link": "https://facebook.com/miksoft.pro"
-        },
-        {
-            "icon": "linkedin",
-            "label": "LinkedIn",
-            "link": "https://www.linkedin.com/in/abdulhadi-qany-6a507a186"
-        }
-    ],
+    "contactLinks": [],
     "skills": [
         {
             "group": "Frontend Engineering",

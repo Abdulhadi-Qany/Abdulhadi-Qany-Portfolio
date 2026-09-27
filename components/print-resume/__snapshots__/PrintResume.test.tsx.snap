@@ -50,6 +50,23 @@ exports[`PrintResume matches snapshot 1`] = `
       Experienced full-stack developer with 10+ years.
     </p>
     <div>
+      <h2>
+        About Me
+      </h2>
+      <p />
+    </div>
+    <div>
+      <h2>
+        Profile
+      </h2>
+      <p>
+        I design systems, define technical direction, and lead engineering teams through complete delivery cycles — from the first architecture decision to live production at scale.
+      </p>
+      <p>
+        5+ years of end-to-end ownership across government, media, and tech. I take products from 0 to launch and build the teams that sustain them.
+      </p>
+    </div>
+    <div>
       <div>
         <h2>
           Experience

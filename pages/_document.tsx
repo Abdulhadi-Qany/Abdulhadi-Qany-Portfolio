@@ -1,5 +1,11 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 
+type ContactLink = {
+    icon: string
+    label: string
+    link: string
+}
+
 import data from '@/public/data.json'
 
 const jsonLd = {
@@ -13,7 +19,7 @@ const jsonLd = {
         '@type': 'PostalAddress',
         addressLocality: data.biography.location
     },
-    sameAs: data.contactLinks.map((l) => l.link)
+    sameAs: (data.contactLinks as ContactLink[]).map((l) => l.link)
 }
 
 export default function Document() {

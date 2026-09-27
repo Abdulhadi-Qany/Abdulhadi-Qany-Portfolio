@@ -8,6 +8,12 @@ import { formatDate, formatPeriod } from '@/utils/date'
 
 import styles from './styles.module.sass'
 
+type ContactLink = {
+    icon: string
+    label: string
+    link: string
+}
+
 export const PrintResume: React.FC = () => {
     const data = useSiteData()
 
@@ -31,7 +37,7 @@ export const PrintResume: React.FC = () => {
                     <p className={styles.titleRole}>{data?.biography?.title}</p>
                     <p className={styles.location}>{data?.biography?.location}</p>
                     <ul className={styles.contactList}>
-                        {data?.contactLinks?.map((item) => (
+                        {(data?.contactLinks as ContactLink[] | undefined)?.map((item) => (
                             <li key={item.icon}>
                                 <span className={styles.contactLabel}>{item.label}:</span>{' '}
                                 <span className={styles.contactValue}>{item.link}</span>

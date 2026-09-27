@@ -7,6 +7,12 @@ import { useSiteData } from '@/utils'
 
 import styles from './styles.module.sass'
 
+type ContactLink = {
+    icon: string
+    label: string
+    link: string
+}
+
 export const Contact: React.FC = () => {
     const data = useSiteData()
 
@@ -31,7 +37,7 @@ export const Contact: React.FC = () => {
             </p>
 
             <div className={styles.socialLinks}>
-                {data?.contactLinks?.map((link) => (
+                {(data?.contactLinks as ContactLink[] | undefined)?.map((link) => (
                     <Link
                         key={link.link}
                         href={link.link}

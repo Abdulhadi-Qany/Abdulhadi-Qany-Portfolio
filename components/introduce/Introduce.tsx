@@ -12,6 +12,12 @@ import { findEarliestDate } from './utils'
 
 import styles from './styles.module.sass'
 
+type ContactLink = {
+    icon: string
+    label: string
+    link: string
+}
+
 const divisor = 1000 * 60 * 60 * 24 * 365.2421897
 
 export const Introduce: React.FC = () => {
@@ -78,7 +84,7 @@ export const Introduce: React.FC = () => {
                         </h1>
 
                         <div className={styles.links}>
-                            {data?.contactLinks?.map((item) => (
+                            {(data?.contactLinks as ContactLink[] | undefined)?.map((item) => (
                                 <Link
                                     key={`link-${String(item.link)}`}
                                     href={item.link}
