@@ -24,15 +24,6 @@ export const Contact: React.FC = () => {
             <p className={styles.contactIntro}>
                 {"I'm always open to discussing new projects, creative ideas, or opportunities to build something great."}
             </p>
-
-            <div className={styles.emailLink}>
-                <a
-                    href={'mailto:a.qany19@gmail.com'}
-                    className={styles.email}
-                >
-                    a.qany19@gmail.com
-                </a>
-            </div>
         </section>
     )
 }
