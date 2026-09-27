@@ -1,17 +1,8 @@
 import React from 'react'
 
-import Link from 'next/link'
-
-import { Icon, IconTypes } from '@/components/icon'
 import { useSiteData } from '@/utils'
 
 import styles from './styles.module.sass'
-
-type ContactLink = {
-    icon: string
-    label: string
-    link: string
-}
 
 export const Contact: React.FC = () => {
     const data = useSiteData()
@@ -31,25 +22,16 @@ export const Contact: React.FC = () => {
             )}
 
             <p className={styles.contactIntro}>
-                {
-                    "I'm always open to discussing new projects, creative ideas, or opportunities to build something great."
-                }
+                {"I'm always open to discussing new projects, creative ideas, or opportunities to build something great."}
             </p>
 
-            <div className={styles.socialLinks}>
-                {(data?.contactLinks as ContactLink[] | undefined)?.map((link) => (
-                    <Link
-                        key={link.link}
-                        href={link.link}
-                        target={'_blank'}
-                        rel={'noopener noreferrer'}
-                        className={styles.socialLink}
-                        title={link.label}
-                    >
-                        <Icon name={link.icon as IconTypes} />
-                        <span>{link.label}</span>
-                    </Link>
-                ))}
+            <div className={styles.emailLink}>
+                <a
+                    href={'mailto:a.qany19@gmail.com'}
+                    className={styles.email}
+                >
+                    a.qany19@gmail.com
+                </a>
             </div>
         </section>
     )
